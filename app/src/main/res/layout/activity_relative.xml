@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".RelativeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/tvSignIn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Selanjutnya"
+        android:id="@+id/selanjutnyaBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya telah membaca ketentuannya"
+        android:id="@+id/checkboxTNC"
+        android:checked="false"
+        android:layout_above="@id/selanjutnyaBtn"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kata Sandi"
+        android:id="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_above="@id/checkboxTNC"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:text="Kata sandi"
+        android:layout_above="@id/etPassword"
+        android:layout_alignStart="@id/etPassword"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Email"
+        android:id="@+id/etMail"
+        android:layout_above="@id/tvPassword"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/etMail"
+        android:layout_above="@id/etMail"
+        android:layout_marginStart="8dp"
+        android:text="Email" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bajing"
+        android:id="@+id/bajingIv"
+        android:layout_below="@id/tvSignIn"
+        android:layout_above="@id/tvEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop" />
+
+
+</RelativeLayout>
