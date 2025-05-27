@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Project Latihan</string>
+
+    <string-array name="data_kelas">
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+    </string-array>
+
 </resources>
