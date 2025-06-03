@@ -3,100 +3,118 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@color/main_green"
     tools:context=".RelativeActivity">
 
     <TextView
+        android:layout_marginTop="32dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:text="Login Account"
         android:id="@+id/tvSignIn"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:gravity="center"
-        android:textSize="24sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Capstone Project Application"
+        android:id="@+id/tvLoginDesc"
+        android:layout_below="@id/tvSignIn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        style="@style/CustomEditText"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Selanjutnya"
-        android:id="@+id/selanjutnyaBtn"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp" />
+        android:layout_height="65dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:drawableEnd="@drawable/baseline_mail_outline_24"
+        android:id="@+id/etMail"
+        android:layout_marginTop="56dp"
+        android:layout_below="@id/tvLoginDesc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp" />
+
+    <EditText
+        style="@style/CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Password"
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/baseline_key_24"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etMail" />
 
     <CheckBox
+        style="@style/CustomCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Saya telah membaca ketentuannya"
-        android:id="@+id/checkboxTNC"
+        android:text="Save Password"
+        android:id="@+id/cbPassword"
         android:checked="false"
-        android:layout_above="@id/selanjutnyaBtn"
-        android:layout_marginBottom="56dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan Kata Sandi"
-        android:id="@+id/etPassword"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_above="@id/checkboxTNC"
-        android:layout_marginBottom="8dp" />
-
-    <TextView
-        android:id="@+id/tvPassword"
-        android:text="Kata sandi"
-        android:layout_above="@id/etPassword"
-        android:layout_alignStart="@id/etPassword"
-        android:layout_marginStart="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan Email"
-        android:id="@+id/etMail"
-        android:layout_above="@id/tvPassword"
-        android:layout_marginBottom="16dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp" />
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/etMail"
-        android:layout_above="@id/etMail"
-        android:layout_marginStart="8dp"
-        android:text="Email" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/bajing"
-        android:id="@+id/bajingIv"
-        android:layout_below="@id/tvSignIn"
-        android:layout_above="@id/tvEmail"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="centerCrop" />
+        android:layout_below="@id/etPassword"
+        android:layout_alignStart="@id/etPassword" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotTv"
+        android:text="Forgot Password?"
+        android:layout_alignTop="@id/cbPassword"
+        android:layout_alignEnd="@id/etPassword"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <Button
+        style="@style/CustomRedButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Login Account"
+        android:id="@+id/loginBtn"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/forgotTv"
+        android:layout_marginHorizontal="16dp" />
+
+    <Button
+        style="@style/CustomYellowButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Create Account"
+        android:id="@+id/registerBtn"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginHorizontal="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or login with"
+        android:textColor="@color/white"
+        android:id="@+id/orLoginWithTv"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/registerBtn"/>
+
+    <Button
+        style="@style/CustomGreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Google"
+        android:id="@+id/googleLoginBtn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/orLoginWithTv"
+        android:layout_marginHorizontal="16dp" />
 
 </RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Style untuk EditText -->
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@color/secondary_green</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Style untuk Button -->
+    <style name="CustomRedButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/red</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style untuk Button -->
+    <style name="CustomYellowButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style untuk Button -->
+    <style name="CustomGreenButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/main_green</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/gray</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style untuk CheckBox -->
+    <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/white</item>
+        <item name="background">@color/secondary_green</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
