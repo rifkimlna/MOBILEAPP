@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="16dp"
+        android:text="Name: Rifki Maulana"
+        android:textSize="16sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/statusCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/radioheadposter"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/daftarTemanTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnTambah"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:text="Daftar Musik"/>
+
+
+    <TextView
+        android:id="@+id/tambahDaftarDesc"
+        android:layout_below="@id/daftarTemanTv"
+        android:layout_marginStart="16dp"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik tombol disamping untuk tambah data"/>
+
+
+    <ImageView
+        android:id="@+id/btnTambah"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/statusCv"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_person_add_alt_1_24"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginHorizontal="12dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tambahDaftarDesc"
+        android:layout_marginTop="8dp"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
